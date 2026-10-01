@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/artur/Documents/Sib C/PW01/pw01-5'
+relocations:     []
+...

@@ -10,13 +10,7 @@ void pong(void) {
     printf("PONG");
 }
 
-void handshake(void) {
-    ping();
-    printf("-");
-    pong();
-    printf("-");
-    ping();
-}
+void handshake(void);
 
 int main(void) {
     int packet_size = NODE_ID * 4;
@@ -31,4 +25,12 @@ int main(void) {
     printf("SESSION:CLOSED\n");
 
     return 0;
+}
+
+void handshake(void) {
+    ping();
+    printf("-");
+    pong();
+    printf("-");
+    ping();
 }

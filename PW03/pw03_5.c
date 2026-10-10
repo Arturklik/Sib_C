@@ -4,7 +4,8 @@ int main(void)
 {
     char letter;
 
-    scanf(" %c", &letter);
+    scanf(" %c", &letter); 
+    // &letter передаёт адресс переменной дл записи. 
 
     char upper = letter - 'a' + 'A';
     char next = letter + 1;

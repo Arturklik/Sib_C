@@ -8,8 +8,8 @@ int main(void)
 
     setlocale(LC_ALL, "");
 
-    if (wscanf(L"%99ls", name) == 1)
-        wprintf(L"Агент %ls авторизован в системе\n", name);
+    wscanf(L"%99ls", name);
+    wprintf(L"Агент %ls авторизован в системе\n", name);
 
     return 0;
 }

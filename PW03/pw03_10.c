@@ -10,9 +10,8 @@ int main(void)
 
     setlocale(LC_ALL, "");
 
-    if (wscanf(L"%99ls %99ls %99ls", module1, module2, module3) != 3)
-        return 0;
-
+    wscanf(L"%99ls %99ls %99ls", module1, module2, module3);
+    
     wprintf(L"%-15ls|%20ls|%.5ls\n", module1, module2, module3);
 
     return 0;

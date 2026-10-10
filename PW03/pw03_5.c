@@ -4,8 +4,7 @@ int main(void)
 {
     char letter;
 
-    if (scanf(" %c", &letter) != 1)
-        return 0;
+    scanf(" %c", &letter);
 
     char upper = letter - 'a' + 'A';
     char next = letter + 1;

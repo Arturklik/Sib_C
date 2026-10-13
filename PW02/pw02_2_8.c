@@ -14,3 +14,4 @@ int main(void)
 //на mac loung double занимает 8 байт, на windows 16 байт.
     return 0;
 }
+//мантиса 

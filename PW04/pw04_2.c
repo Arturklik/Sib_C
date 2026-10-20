@@ -7,8 +7,7 @@ int main(void)
     int32_t dx, dy;
     long long result;
 
-    if (scanf("%hd %hd %hd %hd", &x1, &x2, &y1, &y2) != 4)
-        return 0;
+    scanf("%hd %hd %hd %hd", &x1, &x2, &y1, &y2);
 
     dx = (int32_t)x2 - x1;
     dy = (int32_t)y2 - y1;

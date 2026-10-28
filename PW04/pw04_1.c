@@ -8,6 +8,7 @@ int main(void)
 
     while (scanf("%d", &mm) == 1 && mm > 0)
     {
+        // При делении двух целых дробная часть отбрасывается по правилам C.
         printf("%d cm %d mm\n", mm / MM_PER_CM, mm % MM_PER_CM);
     }
 

@@ -6,27 +6,16 @@ int main(void)
 {
     int i, j;
 
-    for (i = 1; i <= HEIGHT / 2; i++)
+    for (i = 1; i <= HEIGHT; i += 2)
     {
-        for (j = 0; j < HEIGHT / 2; j++)
-            printf(" ");
-
         for (j = 0; j < i; j++)
             printf(">");
 
         printf("\n");
     }
 
-    for (j = 0; j < HEIGHT; j++)
-        printf(">");
-
-    printf("\n");
-
-    for (i = HEIGHT / 2; i >= 1; i--)
+    for (i = HEIGHT - 2; i >= 1; i -= 2)
     {
-        for (j = 0; j < HEIGHT / 2; j++)
-            printf(" ");
-
         for (j = 0; j < i; j++)
             printf(">");
 

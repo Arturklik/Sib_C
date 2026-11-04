@@ -40,7 +40,7 @@ int main(void)
         if (status != 1)
         {
             printf("Invalid number\n");
-            while ((c = getchar()) != '\n' && c != EOF)
+            while ((c = getchar()) != '\n')
                 ;
             continue;
         }

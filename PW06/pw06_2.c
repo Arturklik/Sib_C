@@ -11,7 +11,7 @@ int main(void)
     setlocale(LC_ALL, "");
 
     //getwchar() — широкий символ с учётом локали.
-    while ((c = getwchar()) != L'#' && c != WEOF)
+    while ((c = getwchar()) != L'#')
     {
         if (previous == L'е' && c == L'й')
             count++;

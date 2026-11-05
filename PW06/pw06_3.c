@@ -12,12 +12,12 @@ int main(void)
         tens = abs(n / 10 % 10);
         units = abs(n % 10);
 
-        if (tens > units) //Группа 1: цифра десятков больше цифры единиц.
+        if (tens > units)
         {
             count1++;
             sum1 += n;
         }
-        else if (units > tens) //Группа 2: наоборот, цифра единиц больше цифры десятков.
+        else if (units > tens)
         {
             count2++;
             sum2 += n;

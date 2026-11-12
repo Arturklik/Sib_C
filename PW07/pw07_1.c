@@ -1,28 +1,28 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <locale.h>
+#include <wchar.h>
+#include <wctype.h>
 
 int main(void)
 {
-    int c, letter;
+    wint_t c, letter;
 
-    setlocale(LC_CTYPE, "ru_RU.CP1251");
+    setlocale(LC_ALL, "");
 
-    while ((c = getchar()) != EOF)
+    while ((c = getwchar()) != WEOF)
     {
-        letter = tolower(c);
+        letter = towlower(c);
 
-        if (isalpha(c) && letter != 'a' && letter != 'e' &&
-            letter != 'i' && letter != 'o' && letter != 'u' &&
-            letter != 'а' && letter != 'е' && letter != 'ё' &&
-            letter != 'и' && letter != 'о' && letter != 'у' &&
-            letter != 'ы' && letter != 'э' && letter != 'ю' &&
-            letter != 'я' && letter != 'ь' && letter != 'ъ')
-            putchar('#');
+        if (iswalpha(c) && letter != L'a' && letter != L'e' &&
+            letter != L'i' && letter != L'o' && letter != L'u' &&
+            letter != L'а' && letter != L'е' && letter != L'ё' &&
+            letter != L'и' && letter != L'о' && letter != L'у' &&
+            letter != L'ы' && letter != L'э' && letter != L'ю' &&
+            letter != L'я' && letter != L'ь' && letter != L'ъ')
+            putwchar(L'#');
         else
-            putchar(c);
+            putwchar(c);
     }
 
     return 0;
 }
-//если обяективно была задача "Заменить все согласные буквы на символ '#'" а про то что там с гласными будет никто ничего не сказал.
